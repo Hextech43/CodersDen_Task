@@ -69,9 +69,11 @@ console.log(train)
 
 let newCountry =[]
 
+
 for(country of countries){
-    newCountry.push(country, country.toUpperCase().slice(0,3), country.length)
-// console.log(newCountry)
+    newCountry.push(country,country.toUpperCase().slice(0,3),  country.length)
+
+    console.log(newCountry)
 
 }
 
@@ -106,8 +108,8 @@ for(c=0; c<countries.length; c++){
     ial.push(countries[c])
 }
 if(ial.length>0)
-console.log(ial)
-else
+// console.log(ial)
+// else
 console.log("These are countries that ends without ia",countries)
 
 
@@ -123,7 +125,7 @@ for(var i = 0; i < countries.length; i++){
         name = countries[i];
     }
 }
-console.log(name)
+// console.log(name)
 
 
 // 10.Using the above countries array,
@@ -138,7 +140,7 @@ for(let j=0; j<countries.length; j++){
         five.push(countries[j])
     }
 }
-console.log(five)
+// console.log(five)
 
 
 const webTechs = [
@@ -165,10 +167,29 @@ for(let w = 0; w<webTechs.length; w++){
 // console.log(webTling)
 
 
-let newWebTech =[]
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
-for(web of webTechs){
-    // newWebTech.push(web, web.length)
-    newWebTech.split(",").push(web, web.length)
+// 13. An application created using MongoDB, Express,]
+//  React and Node is called a MERN stack app. 
+//  Create the acronym MERN by using the array mernStack
+let stack =[]
+for(country of mernStack){
+    stack.push(country.slice(0,1))
+
 }
-console.log(newWebTech)
+console.log(stack.toString())
+
+// 14. Printout webTechs
+
+for(let p=0; p< webTechs.length;p++){   
+}
+console.log(webTechs)
+
+// 16. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] 
+// reverse the order using loop without using a reverse method.
+const fruit= ["banana", "orange", "mango", "lemon"]
+
+for(let f=fruit.length-1; f>=0; f--){
+    console.log(fruit[f])
+}
+
